@@ -39,7 +39,7 @@ class _FavoritePageState extends State<FavoritePage> {
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => DetailView(
-                                fashionId: index,
+                                fashionId: _fashionList[index].id - 1,
                               )));
                     },
                     child: Container(
